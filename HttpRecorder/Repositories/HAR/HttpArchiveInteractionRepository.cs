@@ -21,7 +21,9 @@ namespace HttpRecorder.Repositories.HAR
         {
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
             PropertyNameCaseInsensitive = true,
+#pragma warning disable SYSLIB0020
             IgnoreNullValues = true,
+#pragma warning restore SYSLIB0020
             WriteIndented = true,
         };
 
